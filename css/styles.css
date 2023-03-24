@@ -513,6 +513,7 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+/*============MODAL-BEKDROP===========*/
 .bekdrop {
   position: fixed;
   top: 0;
@@ -568,6 +569,8 @@ body {
 .modal-close-btn:focus .close-icon-btn {
   fill: #f4f4fd;
 }
+/*============/MODAL-BEKDROP===========*/
+/*============CARDS===========*/
 .application-frame {
   display: block;
   position: relative;
@@ -602,3 +605,4 @@ body {
 .application-frame-card:focus .application {
   transform: translate(0, 0);
 }
+/*============/CARDS===========*/
