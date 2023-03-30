@@ -64,7 +64,7 @@ body {
   border: none;
   margin-left: auto;
   margin-right: auto;
-  transition: var(--transition-propertys);
+  transition: background-color var(--transition-propertys);
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -188,7 +188,7 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
-  transition: var(--transition-propertys);
+  transition: color var(--transition-propertys);
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -434,7 +434,6 @@ body {
 .btn-filter {
   display: flex;
   font-family: inherit;
-  color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   padding: 12px 24px;
@@ -446,7 +445,10 @@ body {
   letter-spacing: 0.04em;
   color: #4d5ae5;
   background-color: #f4f4fd;
-  transition: var(--transition-propertys);
+  transition: color var(--transition-propertys),
+    background-color var(--transition-propertys),
+    box-shadow var(--transition-propertys),
+    border-color var(--transition-propertys);
 }
 .btn-filter:hover,
 .btn-filter:focus {
@@ -494,7 +496,11 @@ body {
 }
 /*============/PORTFOLIO===========*/
 
-.nav-line::after {
+.menu-link.nav-line {
+  color: #404bbf;
+}
+
+.menu-link.nav-line::after {
   box-sizing: inherit;
   position: absolute;
   content: '';
@@ -581,14 +587,9 @@ body {
   padding-bottom: 40px;
   padding-left: 32px;
   padding-right: 32px;
-
-  font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #f4f4fd;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
   letter-spacing: 0.02em;
   position: absolute;
 
